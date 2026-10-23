@@ -1,0 +1,980 @@
+{
+  "fps": 60,
+  "animations": [
+    {
+      "name": "Common_IdleShow",
+      "variant": "original",
+      "category": "interaction",
+      "source": "assets/blender export/02_动画_单独打开/Common_IdleShow_主体骨骼齐全.blend",
+      "sourceAction": "Common_IdleShow [BODY]",
+      "frames": [
+        1,
+        518
+      ],
+      "seconds": 8.616666666666667,
+      "url": null
+    },
+    {
+      "name": "PutHand01Loop",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/PutHand01Loop_主体补全.blend",
+      "sourceAction": "PutHand01Loop [BODY_SHARED]",
+      "frames": [
+        1,
+        170
+      ],
+      "seconds": 2.816666666666667,
+      "url": null
+    },
+    {
+      "name": "Run",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Run_主体补全.blend",
+      "sourceAction": "Run [BODY_SHARED]",
+      "frames": [
+        1,
+        47
+      ],
+      "seconds": 0.7666666666666667,
+      "url": null
+    },
+    {
+      "name": "Battle_Die",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_Die_主体骨骼齐全.blend",
+      "sourceAction": "Battle_Die [BODY]",
+      "frames": [
+        1,
+        97
+      ],
+      "seconds": 1.6,
+      "url": "/character/animations/Battle_Die.glb"
+    },
+    {
+      "name": "Battle_Die_Loop",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_Die_Loop_主体骨骼齐全.blend",
+      "sourceAction": "Battle_Die_Loop [BODY]",
+      "frames": [
+        1,
+        123
+      ],
+      "seconds": 2.033333333333333,
+      "url": "/character/animations/Battle_Die_Loop.glb"
+    },
+    {
+      "name": "Battle_Hit_H",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_Hit_H_主体骨骼齐全.blend",
+      "sourceAction": "Battle_Hit_H [BODY]",
+      "frames": [
+        1,
+        133
+      ],
+      "seconds": 2.2,
+      "url": "/character/animations/Battle_Hit_H.glb"
+    },
+    {
+      "name": "Battle_Hit_L",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_Hit_L_主体骨骼齐全.blend",
+      "sourceAction": "Battle_Hit_L [BODY]",
+      "frames": [
+        1,
+        93
+      ],
+      "seconds": 1.5333333333333334,
+      "url": "/character/animations/Battle_Hit_L.glb"
+    },
+    {
+      "name": "Battle_Hit_Stun",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_Hit_Stun_主体骨骼齐全.blend",
+      "sourceAction": "Battle_Hit_Stun [BODY]",
+      "frames": [
+        1,
+        83
+      ],
+      "seconds": 1.3666666666666667,
+      "url": "/character/animations/Battle_Hit_Stun.glb"
+    },
+    {
+      "name": "Battle_MazeAttack01",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_MazeAttack01_主体骨骼齐全.blend",
+      "sourceAction": "Battle_MazeAttack01 [BODY]",
+      "frames": [
+        1,
+        203
+      ],
+      "seconds": 3.3666666666666667,
+      "url": "/character/animations/Battle_MazeAttack01.glb"
+    },
+    {
+      "name": "Battle_MazeSkill01",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_MazeSkill01_主体骨骼齐全.blend",
+      "sourceAction": "Battle_MazeSkill01 [BODY]",
+      "frames": [
+        1,
+        233
+      ],
+      "seconds": 3.8666666666666667,
+      "url": "/character/animations/Battle_MazeSkill01.glb"
+    },
+    {
+      "name": "Battle_Revive",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_Revive_主体骨骼齐全.blend",
+      "sourceAction": "Battle_Revive [BODY]",
+      "frames": [
+        1,
+        93
+      ],
+      "seconds": 1.5333333333333334,
+      "url": "/character/animations/Battle_Revive.glb"
+    },
+    {
+      "name": "Battle_Skill01",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_Skill01_主体骨骼齐全.blend",
+      "sourceAction": "Battle_Skill01 [BODY]",
+      "frames": [
+        1,
+        183
+      ],
+      "seconds": 3.033333333333333,
+      "url": "/character/animations/Battle_Skill01.glb"
+    },
+    {
+      "name": "Battle_Skill01_Ready",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_Skill01_Ready_主体骨骼齐全.blend",
+      "sourceAction": "Battle_Skill01_Ready [BODY]",
+      "frames": [
+        1,
+        83
+      ],
+      "seconds": 1.3666666666666667,
+      "url": "/character/animations/Battle_Skill01_Ready.glb"
+    },
+    {
+      "name": "Battle_Skill01_Ready_Loop",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_Skill01_Ready_Loop_主体骨骼齐全.blend",
+      "sourceAction": "Battle_Skill01_Ready_Loop [BODY]",
+      "frames": [
+        1,
+        123
+      ],
+      "seconds": 2.033333333333333,
+      "url": "/character/animations/Battle_Skill01_Ready_Loop.glb"
+    },
+    {
+      "name": "Battle_Skill01toSkill02",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_Skill01toSkill02_主体骨骼齐全.blend",
+      "sourceAction": "Battle_Skill01toSkill02 [BODY]",
+      "frames": [
+        1,
+        159
+      ],
+      "seconds": 2.6333333333333333,
+      "url": "/character/animations/Battle_Skill01toSkill02.glb"
+    },
+    {
+      "name": "Battle_Skill02",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_Skill02_主体骨骼齐全.blend",
+      "sourceAction": "Battle_Skill02 [BODY]",
+      "frames": [
+        1,
+        132
+      ],
+      "seconds": 2.183333333333333,
+      "url": "/character/animations/Battle_Skill02.glb"
+    },
+    {
+      "name": "Battle_Skill02_Ready_Loop",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_Skill02_Ready_Loop_主体骨骼齐全.blend",
+      "sourceAction": "Battle_Skill02_Ready_Loop [BODY]",
+      "frames": [
+        1,
+        123
+      ],
+      "seconds": 2.033333333333333,
+      "url": "/character/animations/Battle_Skill02_Ready_Loop.glb"
+    },
+    {
+      "name": "Battle_Skill02toSkill01",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_Skill02toSkill01_主体骨骼齐全.blend",
+      "sourceAction": "Battle_Skill02toSkill01 [BODY]",
+      "frames": [
+        1,
+        183
+      ],
+      "seconds": 3.033333333333333,
+      "url": "/character/animations/Battle_Skill02toSkill01.glb"
+    },
+    {
+      "name": "Battle_Skill03",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_Skill03_主体骨骼齐全.blend",
+      "sourceAction": "Battle_Skill03 [BODY]",
+      "frames": [
+        1,
+        261
+      ],
+      "seconds": 4.333333333333333,
+      "url": "/character/animations/Battle_Skill03.glb"
+    },
+    {
+      "name": "Battle_Skill03_Ready",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_Skill03_Ready_主体骨骼齐全.blend",
+      "sourceAction": "Battle_Skill03_Ready [BODY]",
+      "frames": [
+        1,
+        123
+      ],
+      "seconds": 2.033333333333333,
+      "url": "/character/animations/Battle_Skill03_Ready.glb"
+    },
+    {
+      "name": "Battle_Skill11",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_Skill11_主体骨骼齐全.blend",
+      "sourceAction": "Battle_Skill11 [BODY]",
+      "frames": [
+        1,
+        271
+      ],
+      "seconds": 4.5,
+      "url": "/character/animations/Battle_Skill11.glb"
+    },
+    {
+      "name": "Battle_StandBy",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_StandBy_主体骨骼齐全.blend",
+      "sourceAction": "Battle_StandBy [BODY]",
+      "frames": [
+        1,
+        123
+      ],
+      "seconds": 2.033333333333333,
+      "url": "/character/animations/Battle_StandBy.glb"
+    },
+    {
+      "name": "Battle_State_Stun",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_State_Stun_主体骨骼齐全.blend",
+      "sourceAction": "Battle_State_Stun [BODY]",
+      "frames": [
+        1,
+        103
+      ],
+      "seconds": 1.7,
+      "url": "/character/animations/Battle_State_Stun.glb"
+    },
+    {
+      "name": "Battle_State_Stun_Loop",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_State_Stun_Loop_主体骨骼齐全.blend",
+      "sourceAction": "Battle_State_Stun_Loop [BODY]",
+      "frames": [
+        1,
+        133
+      ],
+      "seconds": 2.2,
+      "url": "/character/animations/Battle_State_Stun_Loop.glb"
+    },
+    {
+      "name": "Battle_State_Stun_Recover",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_State_Stun_Recover_主体骨骼齐全.blend",
+      "sourceAction": "Battle_State_Stun_Recover [BODY]",
+      "frames": [
+        1,
+        83
+      ],
+      "seconds": 1.3666666666666667,
+      "url": "/character/animations/Battle_State_Stun_Recover.glb"
+    },
+    {
+      "name": "Battle_TeamStandBy",
+      "variant": "original",
+      "category": "battle",
+      "source": "assets/blender export/02_动画_单独打开/Battle_TeamStandBy_主体骨骼齐全.blend",
+      "sourceAction": "Battle_TeamStandBy [BODY]",
+      "frames": [
+        1,
+        123
+      ],
+      "seconds": 2.033333333333333,
+      "url": "/character/animations/Battle_TeamStandBy.glb"
+    },
+    {
+      "name": "BeHit",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/BeHit_主体补全.blend",
+      "sourceAction": "BeHit [BODY_SHARED]",
+      "frames": [
+        1,
+        65
+      ],
+      "seconds": 1.0666666666666667,
+      "url": "/character/animations/BeHit.glb"
+    },
+    {
+      "name": "Break01Loop",
+      "variant": "original",
+      "category": "interaction",
+      "source": "assets/blender export/02_动画_单独打开/Break01Loop_主体骨骼齐全.blend",
+      "sourceAction": "Break01Loop [BODY]",
+      "frames": [
+        1,
+        123
+      ],
+      "seconds": 2.033333333333333,
+      "url": "/character/animations/Break01Loop.glb"
+    },
+    {
+      "name": "FastRun",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/FastRun_主体补全.blend",
+      "sourceAction": "FastRun [BODY_SHARED]",
+      "frames": [
+        1,
+        37
+      ],
+      "seconds": 0.6,
+      "url": "/character/animations/FastRun.glb"
+    },
+    {
+      "name": "FastRunStop_R",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/FastRunStop_R_主体补全.blend",
+      "sourceAction": "FastRunStop_R [BODY_SHARED]",
+      "frames": [
+        1,
+        189
+      ],
+      "seconds": 3.1333333333333333,
+      "url": "/character/animations/FastRunStop_R.glb"
+    },
+    {
+      "name": "FastRun_TurnRight_L",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/FastRun_TurnRight_L_主体补全.blend",
+      "sourceAction": "FastRun_TurnRight_L [BODY_SHARED]",
+      "frames": [
+        1,
+        32
+      ],
+      "seconds": 0.5166666666666667,
+      "url": "/character/animations/FastRun_TurnRight_L.glb"
+    },
+    {
+      "name": "HoldArm01AS",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/HoldArm01AS_主体补全.blend",
+      "sourceAction": "HoldArm01AS [BODY_SHARED]",
+      "frames": [
+        1,
+        133
+      ],
+      "seconds": 2.2,
+      "url": "/character/animations/HoldArm01AS.glb"
+    },
+    {
+      "name": "HoldArm01BS",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/HoldArm01BS_主体补全.blend",
+      "sourceAction": "HoldArm01BS [BODY_SHARED]",
+      "frames": [
+        1,
+        105
+      ],
+      "seconds": 1.7333333333333334,
+      "url": "/character/animations/HoldArm01BS.glb"
+    },
+    {
+      "name": "HoldArm01HandAS",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/HoldArm01HandAS_主体补全.blend",
+      "sourceAction": "HoldArm01HandAS [BODY_SHARED]",
+      "frames": [
+        1,
+        86
+      ],
+      "seconds": 1.4166666666666667,
+      "url": "/character/animations/HoldArm01HandAS.glb"
+    },
+    {
+      "name": "HoldArm01HandBS",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/HoldArm01HandBS_主体补全.blend",
+      "sourceAction": "HoldArm01HandBS [BODY_SHARED]",
+      "frames": [
+        1,
+        106
+      ],
+      "seconds": 1.75,
+      "url": "/character/animations/HoldArm01HandBS.glb"
+    },
+    {
+      "name": "HoldArm01HandLoop",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/HoldArm01HandLoop_主体补全.blend",
+      "sourceAction": "HoldArm01HandLoop [BODY_SHARED]",
+      "frames": [
+        1,
+        235
+      ],
+      "seconds": 3.9,
+      "url": "/character/animations/HoldArm01HandLoop.glb"
+    },
+    {
+      "name": "HoldArm01Loop",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/HoldArm01Loop_主体补全.blend",
+      "sourceAction": "HoldArm01Loop [BODY_SHARED]",
+      "frames": [
+        1,
+        128
+      ],
+      "seconds": 2.1166666666666667,
+      "url": "/character/animations/HoldArm01Loop.glb"
+    },
+    {
+      "name": "Idle_Show_01",
+      "variant": "original",
+      "category": "interaction",
+      "source": "assets/blender export/02_动画_单独打开/Idle_Show_01_主体骨骼齐全.blend",
+      "sourceAction": "Idle_Show_01 [BODY]",
+      "frames": [
+        1,
+        613
+      ],
+      "seconds": 10.2,
+      "url": "/character/animations/Idle_Show_01.glb"
+    },
+    {
+      "name": "Idle_Show_02",
+      "variant": "original",
+      "category": "interaction",
+      "source": "assets/blender export/02_动画_单独打开/Idle_Show_02_主体骨骼齐全.blend",
+      "sourceAction": "Idle_Show_02 [BODY]",
+      "frames": [
+        1,
+        850
+      ],
+      "seconds": 14.15,
+      "url": "/character/animations/Idle_Show_02.glb"
+    },
+    {
+      "name": "LookAtPhoneAS",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/LookAtPhoneAS_主体补全.blend",
+      "sourceAction": "LookAtPhoneAS [BODY_SHARED]",
+      "frames": [
+        1,
+        90
+      ],
+      "seconds": 1.4833333333333334,
+      "url": "/character/animations/LookAtPhoneAS.glb"
+    },
+    {
+      "name": "LookAtPhoneBS",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/LookAtPhoneBS_主体补全.blend",
+      "sourceAction": "LookAtPhoneBS [BODY_SHARED]",
+      "frames": [
+        1,
+        70
+      ],
+      "seconds": 1.15,
+      "url": "/character/animations/LookAtPhoneBS.glb"
+    },
+    {
+      "name": "LookAtPhoneLoop",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/LookAtPhoneLoop_主体补全.blend",
+      "sourceAction": "LookAtPhoneLoop [BODY_SHARED]",
+      "frames": [
+        1,
+        363
+      ],
+      "seconds": 6.033333333333333,
+      "url": "/character/animations/LookAtPhoneLoop.glb"
+    },
+    {
+      "name": "PutHand01AS",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/PutHand01AS_主体补全.blend",
+      "sourceAction": "PutHand01AS [BODY_SHARED]",
+      "frames": [
+        1,
+        82
+      ],
+      "seconds": 1.35,
+      "url": "/character/animations/PutHand01AS.glb"
+    },
+    {
+      "name": "PutHand01BS",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/PutHand01BS_主体补全.blend",
+      "sourceAction": "PutHand01BS [BODY_SHARED]",
+      "frames": [
+        1,
+        83
+      ],
+      "seconds": 1.3666666666666667,
+      "url": "/character/animations/PutHand01BS.glb"
+    },
+    {
+      "name": "RunStop_L",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/RunStop_L_主体补全.blend",
+      "sourceAction": "RunStop_L [BODY_SHARED]",
+      "frames": [
+        1,
+        126
+      ],
+      "seconds": 2.0833333333333335,
+      "url": "/character/animations/RunStop_L.glb"
+    },
+    {
+      "name": "RunStop_R",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/RunStop_R_主体补全.blend",
+      "sourceAction": "RunStop_R [BODY_SHARED]",
+      "frames": [
+        1,
+        126
+      ],
+      "seconds": 2.0833333333333335,
+      "url": "/character/animations/RunStop_R.glb"
+    },
+    {
+      "name": "Run_BS_L",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Run_BS_L_主体补全.blend",
+      "sourceAction": "Run_BS_L [BODY_SHARED]",
+      "frames": [
+        1,
+        45
+      ],
+      "seconds": 0.7333333333333333,
+      "url": "/character/animations/Run_BS_L.glb"
+    },
+    {
+      "name": "Run_BS_R",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Run_BS_R_主体补全.blend",
+      "sourceAction": "Run_BS_R [BODY_SHARED]",
+      "frames": [
+        1,
+        45
+      ],
+      "seconds": 0.7333333333333333,
+      "url": "/character/animations/Run_BS_R.glb"
+    },
+    {
+      "name": "Run_TurnLeft_L",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Run_TurnLeft_L_主体补全.blend",
+      "sourceAction": "Run_TurnLeft_L [BODY_SHARED]",
+      "frames": [
+        1,
+        48
+      ],
+      "seconds": 0.7833333333333333,
+      "url": "/character/animations/Run_TurnLeft_L.glb"
+    },
+    {
+      "name": "Run_TurnLeft_R",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Run_TurnLeft_R_主体补全.blend",
+      "sourceAction": "Run_TurnLeft_R [BODY_SHARED]",
+      "frames": [
+        1,
+        44
+      ],
+      "seconds": 0.7166666666666667,
+      "url": "/character/animations/Run_TurnLeft_R.glb"
+    },
+    {
+      "name": "Run_TurnRight_L",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Run_TurnRight_L_主体补全.blend",
+      "sourceAction": "Run_TurnRight_L [BODY_SHARED]",
+      "frames": [
+        1,
+        44
+      ],
+      "seconds": 0.7166666666666667,
+      "url": "/character/animations/Run_TurnRight_L.glb"
+    },
+    {
+      "name": "Run_TurnRight_R",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Run_TurnRight_R_主体补全.blend",
+      "sourceAction": "Run_TurnRight_R [BODY_SHARED]",
+      "frames": [
+        1,
+        48
+      ],
+      "seconds": 0.7833333333333333,
+      "url": "/character/animations/Run_TurnRight_R.glb"
+    },
+    {
+      "name": "Sit01",
+      "variant": "original",
+      "category": "interaction",
+      "source": "assets/blender export/02_动画_单独打开/Sit01_主体骨骼齐全.blend",
+      "sourceAction": "Sit01 [BODY]",
+      "frames": [
+        1,
+        170
+      ],
+      "seconds": 2.816666666666667,
+      "url": "/character/animations/Sit01.glb"
+    },
+    {
+      "name": "StandBy",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/StandBy_主体补全.blend",
+      "sourceAction": "StandBy [BODY_SHARED]",
+      "frames": [
+        1,
+        170
+      ],
+      "seconds": 2.816666666666667,
+      "url": "/character/animations/StandBy.glb"
+    },
+    {
+      "name": "StrikeChest01AS",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/StrikeChest01AS_主体补全.blend",
+      "sourceAction": "StrikeChest01AS [BODY_SHARED]",
+      "frames": [
+        1,
+        103
+      ],
+      "seconds": 1.7,
+      "url": "/character/animations/StrikeChest01AS.glb"
+    },
+    {
+      "name": "StrikeChest01BS",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/StrikeChest01BS_主体补全.blend",
+      "sourceAction": "StrikeChest01BS [BODY_SHARED]",
+      "frames": [
+        1,
+        113
+      ],
+      "seconds": 1.8666666666666667,
+      "url": "/character/animations/StrikeChest01BS.glb"
+    },
+    {
+      "name": "StrikeChest01Loop",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/StrikeChest01Loop_主体补全.blend",
+      "sourceAction": "StrikeChest01Loop [BODY_SHARED]",
+      "frames": [
+        1,
+        170
+      ],
+      "seconds": 2.816666666666667,
+      "url": "/character/animations/StrikeChest01Loop.glb"
+    },
+    {
+      "name": "Talk01",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Talk01_主体补全.blend",
+      "sourceAction": "Talk01 [BODY_SHARED]",
+      "frames": [
+        1,
+        272
+      ],
+      "seconds": 4.516666666666667,
+      "url": "/character/animations/Talk01.glb"
+    },
+    {
+      "name": "Think01AS",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Think01AS_主体补全.blend",
+      "sourceAction": "Think01AS [BODY_SHARED]",
+      "frames": [
+        1,
+        150
+      ],
+      "seconds": 2.4833333333333334,
+      "url": "/character/animations/Think01AS.glb"
+    },
+    {
+      "name": "Think01BS",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Think01BS_主体补全.blend",
+      "sourceAction": "Think01BS [BODY_SHARED]",
+      "frames": [
+        1,
+        114
+      ],
+      "seconds": 1.8833333333333333,
+      "url": "/character/animations/Think01BS.glb"
+    },
+    {
+      "name": "Think01HandAS",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Think01HandAS_主体补全.blend",
+      "sourceAction": "Think01HandAS [BODY_SHARED]",
+      "frames": [
+        1,
+        143
+      ],
+      "seconds": 2.3666666666666667,
+      "url": "/character/animations/Think01HandAS.glb"
+    },
+    {
+      "name": "Think01HandBS",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Think01HandBS_主体补全.blend",
+      "sourceAction": "Think01HandBS [BODY_SHARED]",
+      "frames": [
+        1,
+        130
+      ],
+      "seconds": 2.15,
+      "url": "/character/animations/Think01HandBS.glb"
+    },
+    {
+      "name": "Think01HandLoop",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Think01HandLoop_主体补全.blend",
+      "sourceAction": "Think01HandLoop [BODY_SHARED]",
+      "frames": [
+        1,
+        163
+      ],
+      "seconds": 2.7,
+      "url": "/character/animations/Think01HandLoop.glb"
+    },
+    {
+      "name": "Think01Loop",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Think01Loop_主体补全.blend",
+      "sourceAction": "Think01Loop [BODY_SHARED]",
+      "frames": [
+        1,
+        218
+      ],
+      "seconds": 3.6166666666666667,
+      "url": "/character/animations/Think01Loop.glb"
+    },
+    {
+      "name": "Turn_180_L",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Turn_180_L_主体补全.blend",
+      "sourceAction": "Turn_180_L [BODY_SHARED]",
+      "frames": [
+        1,
+        123
+      ],
+      "seconds": 2.033333333333333,
+      "url": "/character/animations/Turn_180_L.glb"
+    },
+    {
+      "name": "Turn_180_R",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Turn_180_R_主体补全.blend",
+      "sourceAction": "Turn_180_R [BODY_SHARED]",
+      "frames": [
+        1,
+        123
+      ],
+      "seconds": 2.033333333333333,
+      "url": "/character/animations/Turn_180_R.glb"
+    },
+    {
+      "name": "Turn_45_L",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Turn_45_L_主体补全.blend",
+      "sourceAction": "Turn_45_L [BODY_SHARED]",
+      "frames": [
+        1,
+        88
+      ],
+      "seconds": 1.45,
+      "url": "/character/animations/Turn_45_L.glb"
+    },
+    {
+      "name": "Turn_45_R",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Turn_45_R_主体补全.blend",
+      "sourceAction": "Turn_45_R [BODY_SHARED]",
+      "frames": [
+        1,
+        88
+      ],
+      "seconds": 1.45,
+      "url": "/character/animations/Turn_45_R.glb"
+    },
+    {
+      "name": "Turn_90_L",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Turn_90_L_主体补全.blend",
+      "sourceAction": "Turn_90_L [BODY_SHARED]",
+      "frames": [
+        1,
+        88
+      ],
+      "seconds": 1.45,
+      "url": "/character/animations/Turn_90_L.glb"
+    },
+    {
+      "name": "Turn_90_R",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Turn_90_R_主体补全.blend",
+      "sourceAction": "Turn_90_R [BODY_SHARED]",
+      "frames": [
+        1,
+        88
+      ],
+      "seconds": 1.45,
+      "url": "/character/animations/Turn_90_R.glb"
+    },
+    {
+      "name": "UseProp01",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/UseProp01_主体补全.blend",
+      "sourceAction": "UseProp01 [BODY_SHARED]",
+      "frames": [
+        1,
+        145
+      ],
+      "seconds": 2.4,
+      "url": "/character/animations/UseProp01.glb"
+    },
+    {
+      "name": "UseProp02",
+      "variant": "completed",
+      "category": "interaction",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/UseProp02_主体补全.blend",
+      "sourceAction": "UseProp02 [BODY_SHARED]",
+      "frames": [
+        1,
+        128
+      ],
+      "seconds": 2.1166666666666667,
+      "url": "/character/animations/UseProp02.glb"
+    },
+    {
+      "name": "Walk",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/Walk_主体补全.blend",
+      "sourceAction": "Walk [BODY_SHARED]",
+      "frames": [
+        1,
+        83
+      ],
+      "seconds": 1.3666666666666667,
+      "url": "/character/animations/Walk.glb"
+    },
+    {
+      "name": "WalkStop_L",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/WalkStop_L_主体补全.blend",
+      "sourceAction": "WalkStop_L [BODY_SHARED]",
+      "frames": [
+        1,
+        92
+      ],
+      "seconds": 1.5166666666666666,
+      "url": "/character/animations/WalkStop_L.glb"
+    },
+    {
+      "name": "WalkStop_R",
+      "variant": "completed",
+      "category": "locomotion",
+      "source": "assets/blender export/06_通用动画补全/01_补全单段/WalkStop_R_主体补全.blend",
+      "sourceAction": "WalkStop_R [BODY_SHARED]",
+      "frames": [
+        1,
+        92
+      ],
+      "seconds": 1.5166666666666666,
+      "url": "/character/animations/WalkStop_R.glb"
+    }
+  ]
+}

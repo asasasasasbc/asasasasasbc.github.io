@@ -1,0 +1,34 @@
+{
+  "animations": [
+    {
+      "name": "Camera_Skill02",
+      "bodyClip": "Battle_Skill02",
+      "category": "cinematic",
+      "variant": "camera",
+      "source": "assets/blender export/03_镜头动画/Avatar_Aglaea_00_Ani_Skill02_Camera.blend",
+      "seconds": 2.15,
+      "url": "/character/cameras/Camera_Skill02.json",
+      "camera": true
+    },
+    {
+      "name": "Camera_Skill03",
+      "bodyClip": "Battle_Skill03",
+      "category": "cinematic",
+      "variant": "camera",
+      "source": "assets/blender export/03_镜头动画/Avatar_Aglaea_00_Ani_Skill03_Camera.blend",
+      "seconds": 4.3,
+      "url": "/character/cameras/Camera_Skill03.json",
+      "camera": true
+    },
+    {
+      "name": "Camera_Skill11",
+      "bodyClip": "Battle_Skill11",
+      "category": "cinematic",
+      "variant": "camera",
+      "source": "assets/blender export/03_镜头动画/Avatar_Aglaea_00_Ani_Skill11_Camera.blend",
+      "seconds": 4.45,
+      "url": "/character/cameras/Camera_Skill11.json",
+      "camera": true
+    }
+  ]
+}

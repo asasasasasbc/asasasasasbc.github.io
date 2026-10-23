@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#101321"/><meta name="description" content="角色光锥 —— 阿格莱雅：实时三维角色、动画与镜头展示。非官方同人渲染研究。"/><title>角色光锥 —— 阿格莱雅</title>  <script type="module" crossorigin src="./assets/index-ms6AiepI.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three-7DklU0RL.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-CLlVw5mT.css">
+</head>
+<body>
+  <main id="app">
+    <div id="viewport" aria-label="阿格莱雅三维模型，可拖动旋转、滚轮缩放"></div>
+    <header class="topbar">
+      <a class="brand" href="./"><span class="brand-mark">◇</span><span>角色光锥 <small>AGLAEA · 阿格莱雅</small></span></a>
+      <div class="top-actions"><span class="live"><i></i> THREE.JS / WEBGL 2</span><a href="?view=face">眼部调试 ↗</a><button id="reference-toggle">参考对照 <span>↗</span></button><button id="hide-ui" title="隐藏界面（H 恢复）">纯净画面</button></div>
+    </header>
+    <section class="identity">
+      <div class="eyebrow"><span></span> AMPHOREUS · 黄金裔</div>
+      <h1>AGLAEA</h1><h2>阿格莱雅</h2>
+      <p class="epithet">「黄金的织者」</p>
+      <div class="ornament">✧ <span></span> ✧</div>
+      <p class="intro">以金线织就命运，<br/>让光影停驻于此。</p>
+      <div class="tags"><span>记忆</span><span>雷</span><span>★★★★★</span></div>
+      <div class="study-note"><span>RENDER STUDY / 01</span><p>原始骨骼 · 分区卡通光照<br/>冷暖 Ramp · 实时动画</p></div>
+    </section>
+    <aside class="controls">
+      <div class="panel-heading"><span>MOTION LIBRARY</span><span class="count">—</span></div>
+      <h3>一瞬，一段姿态</h3>
+      <div class="motion-filters"><input id="motion-search" type="search" placeholder="搜索动作 / 英文名" aria-label="搜索动画" disabled/><select id="motion-category" aria-label="动画分类" disabled><option value="">全部动作</option><option value="interaction">待机 / 交互</option><option value="locomotion">移动 / 转身</option><option value="battle">战斗 / 技能</option><option value="cinematic">终结技 / 镜头</option></select></div>
+      <div class="motion-list" aria-label="动画列表"></div>
+      <p id="motion-empty" hidden>没有匹配的动作</p>
+      <p id="motion-status" role="status">正在准备动画列表…</p>
+      <label class="root-motion-toggle"><input id="in-place" type="checkbox" checked/>移动类动作原地预览</label>
+      <label class="select-label camera-mode-label">镜头跟随<select id="camera-mode" disabled><option value="origin">原点 · 自由观察</option><option value="body">身躯 · 位置跟随</option><option value="head">头部 · 位置跟随</option><option value="animation">镜头动画 · 同步播放</option></select></label>
+      <p id="camera-status" role="status">固定世界原点 · 可自由观察</p>
+      <div class="view-presets"><button data-view="full" class="selected">全身</button><button data-view="portrait">肖像</button><button data-view="back">背面</button></div>
+      <details open><summary>光影调校 <span>＋</span></summary>
+        <label class="slider-label">主光方向 <output id="light-value">−25°</output><input id="light" type="range" min="-180" max="180" value="-25"/></label>
+        <label class="slider-label">明暗层次 <output id="shade-value">65%</output><input id="shade" type="range" min="0" max="100" value="65"/></label>
+        <label class="slider-label">描边宽度 <output id="outline-value">1.3</output><input id="outline" type="range" min="0" max="20" value="13"/></label>
+        <label class="slider-label">冷暖色调 <output id="warmth-value">暖 80%</output><input id="warmth" type="range" min="0" max="100" value="80"/></label>
+        <div class="toggles"><label><input id="auto-rotate" type="checkbox"/>自动环绕</label><label><input id="stage-toggle" type="checkbox" checked/>星空舞台</label></div>
+        <div class="toggles"><label><input id="follow-light" type="checkbox" checked/>主光跟随观察方位</label></div>
+      </details>
+      <details><summary>渲染研究 <span>＋</span></summary>
+        <label class="select-label">查看通道<select id="debug-mode"><option value="0">完整渲染</option><option value="1">固有色 / Albedo</option><option value="2">LightMap · AO</option><option value="3">LightMap · 阴影细节</option><option value="4">LightMap · 高光阈值</option><option value="5">材质分区 / ID</option><option value="6">世界法线 / Normal</option></select></label>
+        <p class="technical-note">身体与头发使用原版 LightMap / Ramp。当前缺少 FaceMap，脸部光照为近似实现。</p>
+        <a href="https://zhuanlan.zhihu.com/p/711037262" target="_blank" rel="noreferrer" class="source-link">渲染笔记 ↗</a>
+      </details>
+      <button id="reset" class="reset">↺ 恢复默认视角与光照</button>
+    </aside>
+    <section class="reference-card" hidden><div>IN-GAME REFERENCE <button id="reference-close" aria-label="关闭参考图">×</button></div><select id="reference-select" aria-label="选择游戏参考截图"><option value="./reference-front.png">游戏截图 1 · 正面</option><option value="./reference-quarter.png">游戏截图 2 · 侧转</option><option value="./reference-back.png">游戏截图 3 · 背面</option><option value="./reference.webp">原始全身参考</option></select><img src="./reference-front.png" alt="游戏截图 1 · 正面"/><p>原版游戏截图 · 可与实时模型对照</p></section>
+    <footer class="bottom-bar">
+      <div class="interaction-hint"><span>↔</span> 拖动旋转 <b>·</b> 滚轮缩放 <b>·</b> 右键平移</div>
+      <div class="transport"><button id="play" aria-label="暂停动画" disabled>Ⅱ</button><div class="timeline"><div><span id="clip-label">COMMON IDLE SHOW</span><span id="time-label">0.00 / 0.00</span></div><input id="scrub" aria-label="动画进度" type="range" min="0" max="1" step="0.001" value="0" disabled/></div><select id="speed" aria-label="播放速度"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1.0×</option><option value="1.5">1.5×</option><option value="2">2.0×</option></select></div>
+      <div class="render-status"><span id="fps">— FPS</span><small id="mesh-status">准备模型</small></div>
+    </footer>
+    <div id="loading"><span class="loading-symbol">◇</span><strong>金线正在交织</strong><span id="loading-text">载入角色与材质…</span><div><i id="loading-progress"></i></div></div>
+    <button id="show-ui" hidden>显示界面 · H</button>
+    <section id="face-tools" hidden aria-label="脸部截图调试">
+      <div class="face-tool-row"><strong>FACE / EYE STUDY</strong><span id="face-time">固定帧 0</span><a href="./">返回展示 ↗</a></div>
+      <div class="face-tool-row"><button data-face-view="face" disabled>正面脸部</button><button data-face-view="eyes" disabled>眼部放大</button><button id="face-reset" disabled>重置镜头 / 帧 0</button><button id="face-play" disabled>播放</button><button id="face-shot" disabled>截图 PNG</button><label><input type="checkbox" id="face-treatment" checked disabled/>眼部专用材质</label></div>
+      <input type="range" id="face-scrub" aria-label="调试动画时间" min="0" max="1" step="0.0001" value="0" disabled/>
+      <label class="face-fringe-label">刘海透眼程度 <output id="face-fringe-value">25%</output><input id="face-fringe" type="range" min="0" max="60" value="25" aria-label="刘海透眼程度" disabled/></label>
+      <p>默认固定待机第 0 帧。拖动可检查侧面；截图只包含画布，便于同帧对比。</p>
+    </section>
+    <div id="toast" role="status"></div>
+  </main>
+</body></html>

@@ -1,0 +1,44 @@
+{
+  "fps": 60,
+  "bones": 287,
+  "animations": [
+    {
+      "name": "Common_IdleShow",
+      "frames": [
+        1.0,
+        518.0
+      ],
+      "seconds": 8.616666666666667
+    },
+    {
+      "name": "PutHand01Loop",
+      "frames": [
+        1.0,
+        170.0
+      ],
+      "seconds": 2.816666666666667
+    },
+    {
+      "name": "Run",
+      "frames": [
+        1.0,
+        47.0
+      ],
+      "seconds": 0.7666666666666667
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Body",
+      "vertices": 17665
+    },
+    {
+      "name": "Face",
+      "vertices": 2784
+    },
+    {
+      "name": "Hair",
+      "vertices": 5210
+    }
+  ]
+}
